@@ -18,8 +18,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 2em;
   padding: 1em;
+  height: 2em;
 }
 
 .images_background {
@@ -27,9 +27,12 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .image1 {
+  position: relative;
+  bottom: 4.2em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,12 +41,14 @@ body {
   background-position: center;
   background-size: cover;
   width: 100%;
+  overflow: hidden;
 }
 
 .image2 {
+  position: relative;
+  bottom: 3em;
   width: 20em;
   height: 25em;
-  margin-top: -10%;
 }
 
 .text_s1 {
@@ -54,7 +59,7 @@ body {
   text-align: center;
   padding: 0 2em 0 2em;
   gap: 0.7em;
-  margin-top: 1em;
+  margin-top: -15%;
 }
 
 .text_title {
@@ -65,8 +70,12 @@ body {
 }
 
 .text_description {
+  font-size: 1.1em;
   color: var(--Grayish-Blue);
-  font-weight: 700;
+  font-weight: 400;
+  text-align: justify;
+  text-justify: distribute;
+  margin-top: 1em;
 }
 
 .button_s1 {
@@ -80,4 +89,5 @@ body {
     hsla(188, 66%, 49%, 1) 100%
   );
   font-weight: 700;
+  margin-top: 2em;
 }
