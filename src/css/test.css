@@ -80,7 +80,7 @@ body {
   margin-top: 1em;
 }
 
-.button_s1 {
+.button {
   border-radius: 2em;
   border: none;
   padding: 1em 3em 1em 3em;
@@ -177,4 +177,32 @@ body {
   width: 85%;
   margin-inline: auto;
 }
+
+.foot_note{
+  background-color: var(--Dark-Blue);
+}
+
+.foot_notes{
+  padding: 2rem 0 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.foot_note_media{
+    padding: 2rem 0.5rem 2rem 0.5rem;
+}
+
+.foot_note_text{
+  color:var(--White);
+  margin-top: 0.2rem;
+}
+
+.foot_note_rights{
+  margin-top: 2rem;
+  color: var(--Very-Light-Gray);
+  opacity: 0.5;
+}
+
+
 
