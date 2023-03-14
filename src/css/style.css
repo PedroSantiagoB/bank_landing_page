@@ -14,6 +14,7 @@ body {
   --White: hsl(0, 0%, 100%);
 }
 
+/* ------------------------------------section 1----------------------------------------- */
 .section_1 {
   margin-bottom: 5rem;
 }
@@ -94,19 +95,83 @@ body {
   margin-top: 2em;
 }
 
-.box{
-  background-color:rgba(245, 242, 242, 0.6);
+.menu_s1 {
+  display: none;
+}
+/* ------------------------------------section 1 desktop---------------------------------- */
+
+@media screen and (min-width: 25em) {
+  .menu_s1 {
+    display: block;
+  }
+
+  .list_s1 {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .items_s1 {
+    list-style: none;
+  }
+
+  .items_s1 a {
+    text-decoration: none;
+    color: gray;
+  }
+
+  .nav_bar,
+  .block_s1 {
+    padding-inline: 5rem;
+  }
+
+
+  .block_s1 {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .text_s1 {
+    flex: 40%;
+    text-align: left;
+    padding: 0;
+    margin-top: 6rem;
+  }
+
+  .images_background{
+    flex: 60%;
+    background-image: url(../images/bg-intro-desktop.svg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-position-x: 50rem;
+    height: 60vh;
+    
+  }
+
+  .button{
+    align-self: flex-start;
+  }
+  
+}
+
+/* ------------------------------------options----------------------------------------- */
+.box {
+  background-color: rgba(245, 242, 242, 0.6);
 }
 .container {
   width: 80%;
   margin-inline: auto;
 }
+/* ------------------------------------container desktop---------------------------------- */
 
+@media screen and (min-width: 25em) {
+  .container {
+    width: 75%;
+  }
+}
 .options {
   text-align: center;
   padding-bottom: 5rem;
   padding-top: 5rem;
-
 }
 
 .options_description {
@@ -173,36 +238,33 @@ body {
   font-size: 0.75rem;
 }
 
-.articles_texts{
+.articles_texts {
   width: 85%;
   margin-inline: auto;
 }
 
-.foot_note{
+.foot_note {
   background-color: var(--Dark-Blue);
 }
 
-.foot_notes{
+.foot_notes {
   padding: 2rem 0 2rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.foot_note_media{
-    padding: 2rem 0.5rem 2rem 0.5rem;
+.foot_note_media {
+  padding: 2rem 0.5rem 2rem 0.5rem;
 }
 
-.foot_note_text{
-  color:var(--White);
+.foot_note_text {
+  color: var(--White);
   margin-top: 0.2rem;
 }
 
-.foot_note_rights{
+.foot_note_rights {
   margin-top: 2rem;
   color: var(--Very-Light-Gray);
   opacity: 0.5;
 }
-
-
-
