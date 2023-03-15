@@ -100,7 +100,11 @@ body {
 }
 /* ------------------------------------section 1 desktop---------------------------------- */
 
-@media screen and (min-width: 25em) {
+@media screen and (min-width: 55em) {
+  .section_1{
+    margin-bottom: 0;
+  }
+
   .menu_s1 {
     display: block;
   }
@@ -119,38 +123,64 @@ body {
     color: gray;
   }
 
-  .nav_bar,
-  .block_s1 {
-    padding-inline: 5rem;
+  .nav_bar {
+    padding-inline: 8rem;
   }
-
 
   .block_s1 {
     display: flex;
     flex-direction: row-reverse;
+    padding-left: 8rem;
   }
 
   .text_s1 {
-    flex: 40%;
+    flex: 20%;
     text-align: left;
     padding: 0;
-    margin-top: 6rem;
+    gap: 0.3em;
+
   }
 
-  .images_background{
+  .images_background {
     flex: 60%;
+  }
+
+  .image1 {
+    margin-top: -10rem;
     background-image: url(../images/bg-intro-desktop.svg);
     background-position: left;
     background-repeat: no-repeat;
-    background-position-x: 50rem;
-    height: 60vh;
-    
+    background-size: cover;
+    height: 60rem;
+  }
+  .image2{
+    top: 5rem;
+    left: 10rem;
+    width: 45rem;
+    height: 55rem;
   }
 
-  .button{
-    align-self: flex-start;
+  .text_title{
+    font-size: 3.2rem;
+  }
+
+  .text_description{
+    line-height: 1.7rem;
+
   }
   
+  .button {
+    align-self: flex-start;
+    margin-top: 1rem;
+  }
+
+  .hamburger_s1{
+    display: none;
+  }
+
+  .btn_s1{
+    margin: 0;
+  }
 }
 
 /* ------------------------------------options----------------------------------------- */
